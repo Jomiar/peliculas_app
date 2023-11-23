@@ -39,7 +39,9 @@ class MovieSlider extends StatelessWidget {
   }
 }
 
-// Aqui se encuentra la configuracion de los cuadros que da scroll en horizontal
+//------------------------------------------------------------------------------//
+// Aqui se encuentra la configuracion de los cuadros que da scroll en horizontal//
+//------------------------------------------------------------------------------//
 class _MoviePoster extends StatelessWidget {
   const _MoviePoster({super.key});
 
@@ -58,11 +60,12 @@ class _MoviePoster extends StatelessWidget {
                 arguments: 'movie-instance'),
             child: ClipRRect(
               borderRadius: BorderRadius.circular(20),
+              //
               child: const FadeInImage(
                 placeholder: AssetImage('assets/no-image.jpg'),
                 image: NetworkImage('https://via.placeholder.com/300x400'),
                 width: 130,
-                height: 170,
+                height: 160,
                 fit: BoxFit.cover,
               ),
             ),
